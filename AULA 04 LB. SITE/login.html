@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body {
+            background-color: #FFC0CB; /* Cor de fundo cinza claro */
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .login-container {
+            margin-top: 100px;
+            width: 300px;
+            background-color: #fff; /* Cor de fundo branco */
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1); /* Sombra suave */
+            display: inline-block;
+        }
+        input[type="email"], input[type="password"] {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd; /* Borda cinza claro */
+            border-radius: 3px;
+        }
+        input[type="submit"] {
+            background-color: #1E90FF; /* Cor de fundo verde */
+            color: white;
+            border: none;
+            border-radius: 3px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049; /* Cor de fundo verde mais escuro no hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form action="index.html" method="post">
+            <input type="email" name="email" placeholder="Email" required><br>
+            <input type="password" name="senha" placeholder="Senha" required><br>
+            <input type="submit" value="Entrar">
+        </form>
+    </div>
+</body>
+</html>
